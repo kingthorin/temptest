@@ -15,7 +15,7 @@ clean_build () {
 prepare_build () {
     # Extract version nuber from version tag
     VERSION_NUMBER=`echo $VERSION | sed 's/v//'`
-    METADATA_FILE="../../.github/epub/assets/epub-metadata.yaml"
+    METADATA_FILE="../../../.github/epub/assets/epub-metadata.yaml"
     # Copy images to the temporary folder to generate chapter wise PDFs
     # Images are expected to be added to build during PDF build
     cp -r build/images build/epub/
